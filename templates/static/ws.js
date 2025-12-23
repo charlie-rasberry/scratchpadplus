@@ -20,3 +20,24 @@ socket.onclose = function(event) {
 socket.onerror = function(error) {
   alert(`[error]`);
 };
+
+// debounce
+let debounceTime;
+// initialise/ set the timer
+function startTimer() {
+    debounceTime = setTimeout(timerChoice(), 500);
+}
+// listen for each change in the form called code
+const input = document.getElementById('code-form');
+/**
+ * function timerChoice() {
+    // re start the timer if there is an update
+    if () {
+        startTimer();
+    }
+}
+
+function sendToServer() {
+
+}
+*/
